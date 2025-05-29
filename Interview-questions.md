@@ -325,12 +325,12 @@ S3 bucket policies are JSON-based permissions that control access at the bucket 
 ### If a user wants to access the S3 bucket, what are the processes?
 If a user wants to access an S3 bucket, the access depends on who the user is (IAM or external) and how the bucket is configured (private, cross-account, public, etc.).
 
-“To allow a user to access an S3 bucket, I either attach an IAM policy (for same-account users), configure a bucket policy (for cross-account access), or use a pre-signed URL (for temporary access). I ensure that access is secure and follows the principle of least privilege.”
+“To allow a user to access an S3 bucket, I either attach an IAM policy (for same-account users), configure a bucket policy (for cross-account access), or use a pre-signed URL (for temporary access). I ensure that access is secure and follows the principle of least privilege.
 
 
 Step 1: Attach an IAM Role to EC2
   a. create a role 
-    ```bash
+   ```bash
     {
   "Version": "2012-10-17",
   "Statement": [
@@ -340,7 +340,7 @@ Step 1: Attach an IAM Role to EC2
       "Resource": "arn:aws:s3:::your-bucket-name/*"
     }
   ]
-}
+ }
 ```
 b. Attach the role to your EC2 instance:
 
