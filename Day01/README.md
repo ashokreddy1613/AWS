@@ -10,7 +10,8 @@ Go to AWS console-> Search VPC
 Click on create VPC-> choose CIDR block
 VPC will be created.
 
-## Components:
+# Components:
+
 ## 1. CIDR Block (IP range)
 CIDR block is range of IP addresses of your VPC
 For Example, if you choose 10.0.0.0/16 -> it gives 65536 Ips
@@ -40,7 +41,10 @@ To create an Internet Gateway:
     Click on "Internet Gateways" and then "Create Internet Gateway".
     Attach the Internet Gateway to your VPC.
 
-## Route tables
+## 4. Nate Gateway
+Used for resources in private subnets to access the intenet outbound only, while remaining inaccessuble from the outside.
+
+## 5. Route tables
 Define how traffic is routed within the VPC from subnets to other destinations like Internet gateway, NAT or to other networkse. Each subnet is associated with one route table
 To create a routing table:
 
@@ -48,17 +52,16 @@ Navigate to the VPC dashboard.
     Click on "Route Tables" and then "Create Route Table".
     Define the routing rules, ensuring that traffic flows efficiently and securely to its intended destination.
 
-## Security Groups
+## 6. Security Groups
 Security groups is a virtusl firewall at instance level. they stateful. It controls the inbound and outbound traffic at the instance level. For example: EC2, RDS instances
 
 - All the traffic is explicitly denies. 
 - You can only allow traffic, never explicitly deny
 - Outbound traffic is automatically allowed.
 
-## NACLs
+## 7. NACLs
 Another security firewall but acts at subnet level, they are stateless
 
-## Nate Gateway
-Used for resources in private subnets to access the intenet outbound only, while remaining inaccessuble from the outside.
+
 
 ![VPC Diagram](images/vpc-diagram.png)
