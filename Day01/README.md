@@ -61,4 +61,4 @@ Another security firewall but acts at subnet level, they are stateless
 ## Nate Gateway
 Used for resources in private subnets to access the intenet outbound only, while remaining inaccessuble from the outside.
 
-![VPC Diagram] (images/vpc-diagram.png) 
+![VPC Diagram](images/vpc-diagram.png)
