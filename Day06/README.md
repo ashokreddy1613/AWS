@@ -7,9 +7,9 @@ A NAT (Network Address Translatio) Gateway is Aws service that enables a instanc
 A private instance send request to NAT inorder to access the intenet, NAT gateway then forward traffice to internet or other services, when reponse come back then forwards to the instance in private subnet.
 
 ## Practical Example:
-    suppose you have EC2 instance or RDS in your private subnet, they want to install or update some packages?
+suppose you have EC2 instance or RDS in your private subnet, they want to install or update some packages?
 
-    By creating NAT gateway in public subnet, routing traffic from private subnet through it, your server can securely eshtablish the connection to internet while inbound traffic is completely restricted.
+By creating NAT gateway in public subnet, routing traffic from private subnet through it, your server can securely eshtablish the connection to internet while inbound traffic is completely restricted.
 
 🔧 How to Create a NAT Gateway (AWS Console)
 ✅ Prerequisites:
@@ -19,8 +19,7 @@ A private instance send request to NAT inorder to access the intenet, NAT gatewa
 
 🧭 Step-by-Step:
     Go to VPC → NAT Gateways → Create NAT Gateway
-
-    Choose:
+ Choose:
     Subnet: A public subnet
     Elastic IP: Allocate or select one
     Create the NAT Gateway
