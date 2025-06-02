@@ -39,4 +39,7 @@ By creating Trasit Gateway, you can attach all VPCs to TGW so that traffic flow 
 ## Cost consideration?:
 Transit Gateway will be charged based on Per hour + per GB transferred
 
+How do you connect VPCs across different regions?"
+To connect VPCs across regions, I use Transit Gateway Peering. I create a Transit Gateway in each region, then create a peering attachment between them.
+
 ![TGW-Diagram](images/TGW.png)
