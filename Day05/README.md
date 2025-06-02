@@ -4,7 +4,7 @@ Both Security Groups and NACLs use to control the traffic but they serve at diff
 Let's dive to understand SGs and NACLs
 
 # Security Groups
-    SGs are stateful firewalls, they act at the instance level based on rules, SGs are associated with individual instances
+SGs are stateful firewalls, they act at the instance level based on rules, SGs are associated with individual instances
 
 ## Real-time Example:
 
@@ -27,8 +27,8 @@ Inbound Rules: Allow TCP port 80 from 0.0.0.0/0 (anywhere) for web traffic and T
 
 By configuring NACLs in this manner, you ensure that web traffic (HTTP) is allowed from anywhere while SSH access is restricted to your IP address only.
 
-You must allow both inbound and outbound rules explicitly for traffic to succeed.
+- You must allow both inbound and outbound rules explicitly for traffic to succeed.
 
 ## ✅ Use NACLs for:
-Blocking a specific IP range at subnet level
-Allowing or denying a known CIDR range across all resources
+- Blocking a specific IP range at subnet level
+- Allowing or denying a known CIDR range across all resources
