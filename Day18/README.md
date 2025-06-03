@@ -1,4 +1,4 @@
-#ECS (Elastic Container Service)
+#  ECS (Elastic Container Service)
 
 ECS is a fully managed container orchestration that makes it easy to deploy manage, and scale containernerized applications. It runs docker contaniers on AWS without needing to manage your own Kubenetes.
 
@@ -11,7 +11,7 @@ ECS is a good container orchestration platform but doesn't have all the capabili
 
 Most organizations used EKS or self managed k8s on EC2
 
-Components in ECS
+## Components in ECS
 
 1.Task Definition
 Blueprint of your app (container config, CPU, memory, ports)
@@ -26,4 +26,4 @@ EC2 (you manage VMs) or Fargate (serverless)
 6. Container Agent	
 Installed on EC2 to manage communication with ECS
 
-![ECS-Diagram](images/ECS.png)
+![ECS-Diagram](images/ECS.jpeg)
